@@ -5,10 +5,8 @@
 
 #include <cstdio>
 
-namespace phyverse {
-
-template <>
-void advance_ipc<TestSpace>()
+template <class Space>
+void advance_ipc()
 {
         double min_dist2 = thrust::transform_reduce(
             thrust::device, thrust::make_counting_iterator<int>(0),
@@ -18,4 +16,3 @@ void advance_ipc<TestSpace>()
 }
 
 template void advance_ipc<TestSpace>();
-}

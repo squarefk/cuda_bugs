@@ -3,9 +3,7 @@
 #include <thrust/transform.h>
 #include <thrust/execution_policy.h>
 
-using namespace phyverse;
-
-int main(int argc, char* argv[])
+int main()
 {
     double min_y = thrust::transform_reduce(
             thrust::device, thrust::make_counting_iterator<int>(0),
