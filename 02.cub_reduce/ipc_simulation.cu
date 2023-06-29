@@ -6,7 +6,6 @@
 #include <cstdio>
 #include <vector>
 
-template <class Space>
 void advance_ipc()
 {
     double* d_in;
@@ -31,4 +30,3 @@ void advance_ipc()
     printf("!!!!!!! %.20f\n", result);
 }
 
-template void advance_ipc<TestSpace>();

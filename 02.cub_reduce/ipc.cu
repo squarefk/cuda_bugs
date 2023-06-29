@@ -25,6 +25,6 @@ int main()
         temp_storage, temp_storage_bytes, d_in, d_out, 2023, cub::Min(), 12.);
     cudaMemcpy(&result, d_out, sizeof(double), cudaMemcpyDeviceToHost);
 
-    advance_ipc<TestSpace>();
+    advance_ipc();
     return 0;
 }
